@@ -13,20 +13,25 @@
 
 <table>
 <tr>
-<td>Emp Id:</td> <td><form:input path="id"/></td>
+<td>Id:</td> <td><form:input path="id"/></td>
 </tr>
 
 <tr>
-<td>Emp Name:</td> <td><form:input path="name"/></td>
+<td>Name:</td> <td><form:input path="name"/></td>
 </tr>
 
 <tr>
-<td>Emp Salary:</td> <td><form:input path="salary"/></td>
+<td>Salary:</td> <td><form:input path="salary"/></td>
 </tr>
 
 <tr>
-<td>Emp deisgnation:</td> <td><form:input path="designation"/></td>
+<td>Designation:</td> <td><form:input path="designation"/></td>
 </tr>
+
+<tr>
+<td><input type="submit" value="Register"/></td>
+</tr>
+
 </table>
 
 </form:form>
