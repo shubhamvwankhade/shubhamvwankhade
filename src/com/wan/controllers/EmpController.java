@@ -34,7 +34,7 @@ public ModelAndView showregister()
 @RequestMapping(value="/saveemp",method=RequestMethod.POST)
 public ModelAndView saveemp(@ModelAttribute("Emp") Emp emp)
 {
-	//dao.save(emp);
+	dao.save(emp);
 	return new ModelAndView("redirect:/EmpLogin");
 }
 
