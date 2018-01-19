@@ -17,7 +17,7 @@ public class EmpDao
 		System.out.println(e.getId()+e.getName()+e.getSalary()+e.getDesignation());
 		
 		String sql= "insert into emp(id,name,salary,designation) values('"+e.getId()+"','"+e.getName()+"','"+e.getSalary()+"','"+e.getDesignation()+"')";
-		return template.update(sql);
+		return template.update(sql) ;
 	}
 	
 }
