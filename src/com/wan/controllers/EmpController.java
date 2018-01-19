@@ -3,6 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.wan.Dao.EmpDao;
 import com.wan.beans.Emp;
 
 import javax.annotation.Resource;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class EmpController 
 {
 	@Autowired
-	Emp dao;
+	EmpDao dao;
 
 
 @RequestMapping("emplogin")	
