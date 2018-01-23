@@ -36,8 +36,31 @@ public ModelAndView showregister()
 public ModelAndView saveemp(@ModelAttribute("Emp") Emp emp)
 {
 	dao.save(emp);
-	return new ModelAndView("redirect:/EmpLogin");
+	return new ModelAndView("/EmpLogin","command",new Emp());
 }
 
+@RequestMapping(value="/emplogin",method=RequestMethod.POST)
+public ModelAndView loginemp(@ModelAttribute("Emp") Emp emp)
+{
+	ModelAndView  mv =null;
+	
+	Emp validemp=dao.checkemp(emp);
+	
+	System.out.println("this is under controller"+validemp.getName());
+	
+	
+	 if(validemp !=null)
+	 {
+		 System.out.println(validemp.getName());
+		 mv=new ModelAndView("/Joblist");
+		
+		// mv.addObject("firstname",validemp.getName());
+	 }else
+	 {
+		 return new ModelAndView("/Emplogin");
+	 }
+	 return mv;
+	
 
+}
 }

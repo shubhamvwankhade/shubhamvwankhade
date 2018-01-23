@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="emplogin">Login</a>
-<a href="empregister">Register</a>
-<a href="viewemp">View Employee</a>
-<a href="jobprovider">Job Provider</a>
+
 </body>
 </html>

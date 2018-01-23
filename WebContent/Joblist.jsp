@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Job List</title>
 </head>
 <body>
-<a href="emplogin">Login</a>
-<a href="empregister">Register</a>
-<a href="viewemp">View Employee</a>
-<a href="jobprovider">Job Provider</a>
+ <h1>Available Jobs</h1>
+
+
+
+
 </body>
 </html>
